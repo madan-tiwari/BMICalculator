@@ -2,6 +2,7 @@ package com.madantiwari.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BMI= Weight/(Height*Height);
 
         result.setText(""+BMI);
+
+        Intent intent=new Intent();
+        intent = new Intent(MainActivity.this, BMIActivity.class);
+        Bundle bundle=new Bundle();
+        bundle.putString("Ans", BMI+"");
+        intent.putExtras(bundle);
+        startActivity(intent);
+
     }
 
 }
