@@ -19,15 +19,15 @@ public class BMIActivity extends AppCompatActivity {
 
         if (stuff<=16)
         {
-            tvfinal.setText("Severe thickness");
+            tvfinal.setText("Severe thinness");
         }
         else if(stuff>16 && stuff<=17)
         {
-            tvfinal.setText("Moderate thickness");
+            tvfinal.setText("Moderate thinness");
         }
         else if(stuff>17 && stuff<=18.5)
         {
-            tvfinal.setText("Mild thickness");
+            tvfinal.setText("Mild thinness");
         }
         else if(stuff>18.5 && stuff<=25)
         {
